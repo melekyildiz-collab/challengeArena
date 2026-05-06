@@ -2,41 +2,25 @@
   {
     "id": 1,
     "name": "Melek",
-    "points": 0,
-    "completedChallenges": []
+      "points": 150,
+  "completedChallenges": [1]
   },
   {
     "id": 2,
     "name": "tabitha",
     "points": 0,
-    "completedChallenges": []
+    "completedChallenges": [1]
   },
   {
     "id": 3,
     "name": "Melek",
     "points": 0,
-    "completedChallenges": []
+    "completedChallenges": [1]
   },
   {
     "id": 4,
     "name": "tabitha",
     "points": 0,
-    "completedChallenges": []
-  },
-  {
-    "id": 5,
-    "name": "Melek",
-    "points": 0
-  },
-  {
-    "id": 6,
-    "name": "Melek",
-    "points": 0,
-    "completedChallenges": []
-  },
-  {
-    "id": 7,
-    "name": "Melek",
-    "points": 0
+    "completedChallenges": [1]
   }
 ]
