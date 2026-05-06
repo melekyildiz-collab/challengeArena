@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Node API",
+    "difficulty": "medium",
+    "points": 50
+  }
+]
