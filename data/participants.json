@@ -2,22 +2,26 @@
   {
     "id": 1,
     "name": "Melek",
-    "points": 50
+    "points": 0,
+    "completedChallenges": []
   },
   {
     "id": 2,
     "name": "tabitha",
-    "points": 0
+    "points": 0,
+    "completedChallenges": []
   },
   {
     "id": 3,
     "name": "Melek",
-    "points": 0
+    "points": 0,
+    "completedChallenges": []
   },
   {
     "id": 4,
     "name": "tabitha",
-    "points": 0
+    "points": 0,
+    "completedChallenges": []
   },
   {
     "id": 5,
@@ -27,7 +31,8 @@
   {
     "id": 6,
     "name": "Melek",
-    "points": 0
+    "points": 0,
+    "completedChallenges": []
   },
   {
     "id": 7,
