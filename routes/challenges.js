@@ -5,7 +5,7 @@ const crypto = require("crypto");
 const app = express();
 app.use(express.json());
 
-const challengePath = "../data/challenges.json";
+const challengePath = "./data/challenges.json";
 
 app.get("/", async (req, res) => {
   const challenges = await readFile(challengePath, "utf-8");
@@ -28,9 +28,7 @@ app.post("/", async (req, res) => {
 
   challengesJson.push(challenge);
 
-  await writeFile(
-    challengePath,
-    JSON.stringify(challengesJson, null, 2)
+  await writeFile(challengePath,JSON.stringify(challengesJson, null, 2)
   );
 
   res.status(201).json(challenge);
