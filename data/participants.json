@@ -2,25 +2,33 @@
   {
     "id": 1,
     "name": "Melek",
-      "points": 150,
-  "completedChallenges": [1]
+    "points": 150,
+    "completedChallenges": [
+      1
+    ]
   },
   {
     "id": 2,
     "name": "tabitha",
-    "points": 0,
-    "completedChallenges": [1]
+    "points": 50,
+    "completedChallenges": [
+      1
+    ]
   },
   {
     "id": 3,
     "name": "Melek",
     "points": 0,
-    "completedChallenges": [1]
+    "completedChallenges": [
+      1
+    ]
   },
   {
     "id": 4,
     "name": "tabitha",
-    "points": 0,
-    "completedChallenges": [1]
+    "points": 150,
+    "completedChallenges": [
+      1
+    ]
   }
 ]

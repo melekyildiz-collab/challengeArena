@@ -4,5 +4,11 @@
     "title": "Node API",
     "difficulty": "medium",
     "points": 50
+  },
+  {
+    "id": 2,
+    "title": "React App",
+    "difficulty": "hard",
+    "points": 100
   }
 ]

@@ -1,3 +1,32 @@
+# ChallengeArena
 
-###Après avoir récupérer le projet sur le lien git  avec un git clone 
-Ouvrer votre terminal et taper "npm install" pour avoir les même dependencies
+# Initialisation
+
+Après avoir récupérer le projet sur github  faites la commande suivante dans votre terminal :
+
+```bash
+git clone https://github.com/melekyildiz-collab/challengeArena 
+```
+Faire un autre ligne de commande 
+
+```bash
+npm install
+```
+
+# Docker 
+
+Pour lancer le projet avec Docker :
+
+```bash
+docker compose up --build
+```
+
+
+Pour arrêter le projet :
+
+```bash
+docker compose down
+```
+
+
+

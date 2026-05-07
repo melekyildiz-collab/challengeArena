@@ -7,7 +7,7 @@ const participantsFile = "./data/participants.json";
 const challengesFile = "./data/challenges.json";
 
 
-// CREATE PARTICIPANT
+// la route qui permet de créer un nouveau participant et de l'ajouter au fichier Json
 router.post("/", (req, res) => {
 
   const { name } = req.body;
@@ -41,7 +41,7 @@ router.post("/", (req, res) => {
 });
 
 
-// VALIDATE CHALLENGE
+// la route qui permet de valider un challenge pour un participant et de mettre à jour les points du participant dans le fichier Json
 router.post("/:id/validate", (req, res) => {
 
   const participantId = parseInt(req.params.id);
@@ -54,7 +54,7 @@ router.post("/:id/validate", (req, res) => {
 
   const challenges = JSON.parse(
     fs.readFileSync(challengesFile)
-  );
+  );//
 
   const participant = participants.find(
     p => p.id === participantId
@@ -91,7 +91,7 @@ router.post("/:id/validate", (req, res) => {
   fs.writeFileSync(
     participantsFile,
     JSON.stringify(participants, null, 2)
-  );
+  );//On met à jour le fichier Json des participants avec les nouveaux points du participant
 
   res.json({
     message: "Challenge validated",

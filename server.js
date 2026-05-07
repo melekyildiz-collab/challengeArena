@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/participants", participantsRoutes);
+app.use("/participants", participantsRoutes); 
 app.use("/challenges", challengesRoutes);
 app.use("/leaderboard", leaderboardRoutes);
 
