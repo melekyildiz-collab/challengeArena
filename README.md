@@ -13,6 +13,11 @@ Faire un autre ligne de commande
 npm install
 ```
 
+Lancer le server 
+
+```bash
+npm  run dev
+```
 # Docker 
 
 Pour lancer le projet avec Docker :

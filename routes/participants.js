@@ -59,7 +59,7 @@ router.post("/:id/validate", (req, res) => {
   const participant = participants.find(
     p => p.id === participantId
   );
-
+//Condition qui verifie si le participant existe ou pas sinon on retourne une erreur 404
   if (!participant) {
     return res.status(404).json({
       error: "Participant not found"
@@ -69,13 +69,14 @@ router.post("/:id/validate", (req, res) => {
   const challenge = challenges.find(
     c => c.id === challengeId
   );
-
+//Condition qui verifie si le challenge existe ou pas sinon on retourne une erreur 404
   if (!challenge) {
     return res.status(404).json({
       error: "Challenge not found"
     });
   }
-
+//Condition qui verifie si le participant a déjà résolu le challenge, si ce n'est pas le cas on ajoute les points du challenge 
+// au participant et on met à jour le fichier Json des participants
   if (
     participant.completedChallenges.includes(challengeId)
   ) {
