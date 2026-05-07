@@ -25,7 +25,8 @@ router.post("/", (req, res) => {
   const newParticipant = {
     id: participants.length + 1,
     name,
-    points: 0
+    points: 0,
+    completedChallenges: []
   };
 
   participants.push(newParticipant);
@@ -75,7 +76,17 @@ router.post("/:id/validate", (req, res) => {
     });
   }
 
+  if (
+    participant.completedChallenges.includes(challengeId)
+  ) {
+    return res.status(400).json({
+      error: "Challenge already completed"
+    });
+  }
+
   participant.points += challenge.points;
+
+  participant.completedChallenges.push(challengeId);
 
   fs.writeFileSync(
     participantsFile,
